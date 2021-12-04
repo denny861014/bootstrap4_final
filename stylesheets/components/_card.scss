@@ -1,0 +1,19 @@
+.card {
+    p {
+        font-size: 20px;
+        color: theme-color('danger');
+    }
+
+    .button {
+        font-size: 24px;
+    }
+
+    .sale {
+        position: absolute;
+        top: 40px;
+        background: theme-color('danger');
+        color: white;
+        padding: 5px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,122 @@
+.bg-cover {
+    background-size: center;
+    background-position: center center;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow .3s;
+    &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .24);
+      }
+  }
+
+//直線
+.line {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        margin-top: 4px;
+        right: 48%;
+        width: 2px;
+        height: 80px;
+        background: #343a40;
+    }
+}    
+
+.line-md {
+    @include media-breakpoint-up(md) {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            margin-top: 4px;
+            right: 48%;
+            width: 2px;
+            height: 80px;
+            background: #343a40;
+        }
+    }
+}
+
+//水平線
+.horizon {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        margin-left: 4px;
+        top: 48%;
+        width: 80px;
+        height: 2px;
+        background: #343a40;
+    }
+}
+
+// logo
+h1 {
+    a {
+        letter-spacing: 3px;
+    }
+}   
+
+// 分隔線
+.divider {
+    width: 90%;
+    border: 1px solid white;
+}
+
+// 時間軸
+.timeline-section {
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: white;
+    }
+    // 圓形
+    .timeline-pointer {
+        background-color: $primary;
+        z-index: 1;
+        border: 1px solid white;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active {
+            &::after{
+                content: "";
+                position: absolute;
+                top: 48%;
+                width: 14px;
+                height: 14px;
+                background: white;
+                border-radius: 50%;
+                transform: translateY(-40%);
+            }
+        }
+        &.check{
+            background-color: white;
+            color:$primary
+        }
+    }
+    &.full{
+        &::after{
+            background-color: $primary;
+        }
+        .timeline-pointer{
+            border: none;
+        }
+        .check{
+            background-color: $primary;
+            color:$light
+        }
+    }
+}

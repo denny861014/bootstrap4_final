@@ -1,0 +1,31 @@
+.section {
+    $section-height: 420px;
+    $text-height: 360px;
+
+    @include media-breakpoint-up(md) {
+        height: $section-height;
+    }
+    .w-mode-horizon{
+        writing-mode: horizontal-tb;
+        padding: 20px;
+    }
+    .w-mode-md-vertical {
+        @include media-breakpoint-up(md) {
+            writing-mode: vertical-rl;
+            height: $text-height;
+            padding: 0;
+          }
+    }
+    
+    .w-mode-subtitle-horizon {
+        writing-mode: horizontal-tb;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        @include media-breakpoint-up(md) {
+            writing-mode: vertical-rl;
+            font-weight: bold;
+        }
+    }
+}

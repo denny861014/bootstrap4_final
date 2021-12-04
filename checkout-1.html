@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <h1>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-headphones mx-2"></i>SOUL MUSIC</a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto font-weight-bold">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">產品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">登入</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-md-7 px-md-9">
+        <div class="row">
+            <div class="col-md-8 px-0">
+                <div class="bg-primary text-white p-5">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-6">
+                            <h3 class="h2 font-weight-bold">運送</h3>
+                        </div>
+                        <div class="col-6 d-flex align-items-center justify-content-between timeline-section">
+                            <div class="timeline-pointer active"></div>
+                            <div class="timeline-pointer"></div>
+                            <div class="timeline-pointer"></div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="inputlastName" class="h5 font-weight-bold">姓氏</label>
+                                <input type="text" class="form-control form-control-lg" id="inputlastName"
+                                    placeholder="王">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="inputfirstName" class="h5 font-weight-bold">名字</label>
+                                <input type="email" class="form-control form-control-lg" id="inputfirstName"
+                                    placeholder="小明">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone" class="h5 font-weight-bold">電話</label>
+                            <input type="text" class="form-control form-control-lg" id="inputPhone"
+                                placeholder="0912-345-678">
+                        </div>
+
+                        <label for="selectCountry" class="h5 font-weight-bold">地址</label>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <select class="form-control form-control-lg" id="selectCity">
+                                    <option>台北市</option>
+                                    <option>新北市</option>
+                                    <option>桃園市</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <select class="form-control form-control-lg" id="">
+                                    <option>松山區</option>
+                                    <option>信義區</option>
+                                    <option>大安區</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control form-control-lg" id="inputAddress"
+                                placeholder="八德路三段">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="checkout-2.html" class="btn btn-danger btn-block btn-lg py-3 rounded-0 font-weight-bold">下一步</a>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="text-black border mb-4">
+                    <h3 class="text-center bg-secondary font-weight-bold p-3 mb-0">訂單摘要</h3>
+                    <ul class="list-unstyled bg-white p-3 mb-0">
+                        <li class="d-flex justify-content-between mb-2">小計 <span>NT$ 2,124</span></li>
+                        <li class="d-flex justify-content-between mb-2">運費 <span>NT$ 60</span></li>
+                        <li class="d-flex justify-content-between mb-2 h5 font-weight-bold">總計 <span>NT$ 2,180</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-black border">
+                    <h3 class="text-center bg-secondary font-weight-bold p-3 mb-0">訂單摘要</h3>
+                    <ul class="list-unstyled bg-white p-3 mb-0">
+                        <li class="d-flex mb-2">
+                            <img class="img-fluid mr-4" src="/images/mamamoo.jpg" alt="" style="width: 120px;">
+                            <div>
+                                <p>MAMAMOO - I SAY MAMAMOO : THE BEST <span class="font-weight-bold">(1)</span></p>
+                                <h5 class="font-weight-bold">NT$ 718</h5>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <img class="img-fluid mr-4" src="/images/twice.jfif" alt="" style="width: 120px;">
+                            <div>
+                                <p>TWICE - TASTE OF LOVE (10TH MINI ALBUM) <span class="font-weight-bold">(1)</span></p>
+                                <h5 class="font-weight-bold">NT$ 698</h5>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <img class="img-fluid mr-4" src="/images/BTS.jpg" alt="" style="width: 120px;">
+                            <div>
+                                <p>BTS - Love Yourself 結 'Answer' <span class="font-weight-bold">(1)</span></p>
+                                <h5 class="font-weight-bold">NT$ 708</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer">
+        <div class="bg-primary py-6">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 text-white">
+                        <span class="h2"><i class="fas fa-headphones"></i> 訂閱我們收到更多消息!</span>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white" id="inputGroup-sizing-lg"><i
+                                        class="far fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control border-left-0 rounded-0" placeholder="請輸入 Email"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-warning rounded-0" type="button" id="button-addon2"><i
+                                        class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 d-flex flex-column">
+                        <div class="h2"><a href="index.html" style="color: black; text-decoration: none;">SOUL MUSIC</a>
+                        </div>
+                        <ul class="mt-auto list-unstyled">
+                            <li><a href="tel+02-1234-5678">02-1234-5678</a></li>
+                            <li><a href="mailto:soulmusic@mail.com">soulmusic@mail.com</a></li>
+                            <li>110 台北市信義區信義路五段7號</li>
+                        </ul>
+                    </div>
+                    <div class="d-none d-md-flex col-md-5 justify-content-end">
+                        <div class="row justify-content-end">
+                            <div class="col-md-3" style="writing-mode: vertical-rl;">
+                                <h2 class="h1">
+                                    <span class="line">每天都是</span>
+                                    <br>
+                                    <span class="mt-5">聽音樂的好日子。</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end align-items-center">
+                        <span>© 2021 SOULMUSIC* All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

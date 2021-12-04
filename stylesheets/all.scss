@@ -1,0 +1,16 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../stylesheets/helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//區塊
+@import "../stylesheets/components/header";
+@import "../stylesheets/components/section";
+
+//元件
+@import "../stylesheets/components/card";
+@import "../stylesheets/components/cart";
+
+
+//通用
+@import "../stylesheets/components/utilities";
