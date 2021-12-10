@@ -1,10 +1,6 @@
 .section {
-    $section-height: 420px;
     $text-height: 360px;
 
-    @include media-breakpoint-up(md) {
-        height: $section-height;
-    }
     .w-mode-horizon{
         writing-mode: horizontal-tb;
         padding: 20px;
